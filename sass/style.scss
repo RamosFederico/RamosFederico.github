@@ -1,0 +1,150 @@
+$color-primario: #4d4d4d
+
+
+body{
+                        
+    background: linear-gradient( #f7931a, #f7931a,#f7931a,#f7931a, rgb(75, 75, 75),rgb(75, 75, 75))  !important;
+}
+@mixin media ($medida : 480px ) { 
+    @media (max-width: $medida) {
+        @content 
+    }
+}
+section{
+    display: grid;
+    grid-template-areas:"menu header header"
+                        "menu producto aside"
+                        "menu publicidad aside"
+                        "menu footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+    
+
+}
+
+h1{ /*selector*/
+    /*propiedad : valor*/
+    color: aquamarine;
+    
+}
+.navbar-toggler {
+    background-color: aquamarine;
+   
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover{
+    color: aquamarine;
+}
+.nav-link:active{
+    color: seagreen;
+}
+.imagen{
+    transition: heirht 2s, width 2s;
+}
+.imagen:hover{
+    height: 300px;
+    width: 300px;
+}
+/* ctrl + k + c*/
+.btn1, .btn3{
+    background-color: #f7931a;
+    color: aliceblue; 
+    display: flex;
+    /* flex-direction: row;pordefecto esta en row */
+    /* justify-content: flex-start; por defecto arriba a la izquierda*/
+    justify-content: space-around;
+    align-items: center;   
+    
+    list-style-type: none;
+    text-decoration: none;
+}
+.btn2, .btn4 {
+    background-color: rgb(201, 157, 102);
+    color: aliceblue; 
+    display: flex;
+    /* flex-direction: row;pordefecto esta en row */
+    /* justify-content: flex-start; por defecto arriba a la izquierda*/
+    justify-content: space-around;
+    align-items: center;   
+    list-style-type: none;
+    text-decoration: none;
+}
+p{
+    color: #4d4d4d
+    
+}
+
+section{
+    background-color: transparent;
+}
+
+#Seccion1{
+    background: linear-gradient(#f7931a,#f7931a,#f7931a ) ;
+    color: aquamarine ;
+   
+}
+
+#Seccion2{
+    background:  rgb(201, 157, 102);
+    color: RGB( 60, 60, 61);
+}
+
+.Subtitulo1{
+    color: #4d4d4d;
+    font-style: italic;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Subtitulo2{
+    color:aquamarine;
+    font-style: italic;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.SubTitulo{
+    text-align: center;
+}
+.ultimo {
+    background:rgb(201, 157, 102) ,rgb(201, 157, 102),rgb(75, 75, 75 );
+}
+#final {
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  .btn1, .btn2, .btn3, .btn4{
+    flex: 1;
+    
+}
+
+.Indices a{
+    list-style-position: none;
+    color: goldenrod;
+    
+}
+.boton{
+
+    background-color: goldenrod;
+    justify-content: right;
+
+}
+.CTOINF{
+    max-width: 80%;
+    max-height: 40%;
+}
+.Datos{
+    color: white;
+}
+.accordion .accordion-button{
+    background: linear-gradient(#f7931a,rgb(75, 75, 75));
+}
+.accordion-button:hover {
+    color: aquamarine;
+
+}
